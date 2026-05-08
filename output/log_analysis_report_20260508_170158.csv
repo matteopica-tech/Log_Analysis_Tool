@@ -1,0 +1,11 @@
+SEZIONE,CHIAVE,VALORE
+SUMMARY,Total records,8
+LOG_LEVEL,INFO,5
+LOG_LEVEL,WARN,3
+COMPONENT,OrderService,3
+COMPONENT,DatabaseConnector,1
+COMPONENT,PaymentService,1
+COMPONENT,KafkaProducer,1
+COMPONENT,ApiClient,1
+COMPONENT,Scheduler,1
+KEYWORD,timeout,1

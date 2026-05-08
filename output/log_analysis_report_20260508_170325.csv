@@ -1,0 +1,26 @@
+SEZIONE,CHIAVE,VALORE
+SUMMARY,Total records,13
+LOG_LEVEL,INFO,5
+LOG_LEVEL,WARN,3
+LOG_LEVEL,ERROR,5
+COMPONENT,OrderService,4
+COMPONENT,DatabaseConnector,2
+COMPONENT,PaymentService,2
+COMPONENT,KafkaProducer,2
+COMPONENT,ApiClient,2
+COMPONENT,Scheduler,1
+ERROR_BY_COMPONENT,PaymentService,1
+ERROR_BY_COMPONENT,DatabaseConnector,1
+ERROR_BY_COMPONENT,KafkaProducer,1
+ERROR_BY_COMPONENT,ApiClient,1
+ERROR_BY_COMPONENT,OrderService,1
+KEYWORD,timeout,1
+KEYWORD,sql error,1
+KEYWORD,connection refused,1
+KEYWORD,http 500,1
+KEYWORD,nullpointerexception,1
+ERROR_DETAIL,PaymentService,"2026-05-08 09:15:16 | Payment failed orderId=ORD-1001 errorCode=PAY_500 message=""Internal Server Error"""
+ERROR_DETAIL,DatabaseConnector,"2026-05-08 09:16:05 | SQL Error code=ORA-00001 message=""Unique constraint violated"""
+ERROR_DETAIL,KafkaProducer,2026-05-08 09:17:25 | Connection refused broker=kafka-prod-01 topic=orders.events
+ERROR_DETAIL,ApiClient,2026-05-08 09:19:44 | HTTP 500 resource=/api/customer/details correlationId=abc-123
+ERROR_DETAIL,OrderService,2026-05-08 09:21:09 | NullPointerException orderId=ORD-1003 class=OrderMapper
